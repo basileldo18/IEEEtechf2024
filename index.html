@@ -178,7 +178,7 @@
 
 @media (max-width: 576px) {
     .main-content {
-        padding: 20px 5px; /* Adjusted padding for very small screens */
+        padding: 30px 5px; /* Adjusted padding for very small screens */
         margin-left: 10px; /* Adjusted margin */
         margin-top: 2px; /* Adjusted margin */
     }
@@ -1219,6 +1219,193 @@
 }
 
 
+/* Add background texture to create a paper note effect */
+.contact {
+  background: #1a1a1a; /* Dark background */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 1200px; /* Ensure it doesn't get too wide */
+  margin: 0 auto; /* Center the contact section */
+  margin-bottom: 30px;
+  text-align: center; /* Center the text */
+  position: relative;
+  font-family: 'Roboto', sans-serif; /* Modern and stylish font */
+  background-image: url('https://www.transparenttextures.com/patterns/paper-embossed.png'); /* Paper texture */
+  background-size: cover;
+  background-attachment: fixed; /* Fix the background texture */
+  color: #ddd; /* Light text color for readability */
+  overflow: hidden;
+  transition: transform 0.14s, box-shadow 0.3s, padding 0.3s;
+}
+
+/* Hover effects */
+.contact:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
+  background: #333; /* Darker background on hover */
+  padding: 35px; /* Increase padding on hover */
+}
+
+/* Title styles */
+.contact h2 {
+  color: #ffffff; /* Bright red title color */
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2.5em; /* Larger title */
+  position: relative;
+  letter-spacing: 1px; /* Add some space between letters */
+  z-index: 1; /* Ensure title is above pseudo-elements */
+}
+
+/* Decorative underline for title */
+.contact h2::after {
+  content: "";
+  width: 790px;
+  height: 4px;
+  background: #ffffff;
+  display: block;
+  margin: 20px auto 0;
+  box-shadow: 0 0 10px #645757; /* Glowing effect */
+  border-radius: 5px;
+}
+
+/* Paragraph styles */
+.contact p {
+  margin: 10px 0;
+  font-size: 1.2em; /* Slightly larger text */
+  color: #ddd; /* Light text color */
+  line-height: 1.6; /* Better line spacing */
+  z-index: 1; /* Ensure text is above pseudo-elements */
+}
+
+/* Link styles */
+.contact a {
+  color: #f9d2b8; /* Bright orange for links */
+  text-decoration: none;
+  
+  transition: color 0.3s, text-shadow 0.3s;
+  z-index: 1; /* Ensure links are above pseudo-elements */
+}
+
+/* Hover effect for links */
+.contact a:hover {
+  text-decoration: underline;
+  color: #fff; /* Change color on hover */
+  
+}
+/* Add a subtle animation to the text */
+.contact h2, .contact p, .contact a {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Paper sticker effect */
+.contact::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 60px;
+  height: 60px;
+  background: #1a1a1a; /* Dark background for the sticker */
+  border: 3px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transform: rotate(-4deg);
+  z-index: 0; /* Place behind content */
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+/* Sticker corner effect */
+.contact::after {
+  content: '';
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 80px;
+  height: 80px;
+  background: #1a1a1a; /* Dark background for the sticker */
+  border: 3px solid #333;
+  border-radius: 15px 15px 0 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transform: rotate(5deg);
+  z-index: 0; /* Place behind content */
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+/* Hover effects for sticker */
+.contact:hover::before {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+  transform: rotate(-2deg); /* Slight rotation on hover */
+}
+
+.contact:hover::after {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+  transform: rotate(3deg); /* Slight rotation on hover */
+}
+
+/* Glowing effect for hover */
+.contact:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
+  background: #222; /* Darker background */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  body {
+    font-size: 16px; /* Adjust font size for larger screens */
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    font-size: 15px; /* Adjust font size for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Adjust font size for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: 13px; /* Adjust font size for small devices */
+  
+  .contact {
+    padding: 15px; /* Adjust padding for small devices */
+  }
+  
+  .contact p {
+    font-size: 14px; /* Adjust text size for small devices */
+  }
+}
+}
     </style>
 </head>
 <body>
@@ -1386,6 +1573,12 @@
             </div>
         </div>
     </section>
+    <section class="contact" data-aos="fade-down">
+        <h2>CONTACT US</h2>
+        <p>For any inquiries, please contact:</p>
+        <p>EMAIL: <a href="mailto:info@ieeetechfutures2024.org">info@ieeetechfutures2024.org</a></p>
+        <p>PHONE: <a href="tel:+919876543210">+91 9876543210</a></p>
+      </section>
     <footer class="footer">
         <div class="container">
           <h2>IEEE Tech Futures</h2>
