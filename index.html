@@ -147,11 +147,41 @@
       .main-content {
         text-align: left;
         padding: 100px 20px;
-        margin-left: 140px;
+        margin-left: 80px;
         margin-top: 80px;
         
       }
+      @media (max-width: 1200px) {
+    .main-content {
+        padding: 80px 15px; /* Adjusted padding for medium-large screens */
+        margin-left: 60px; /* Adjusted margin */
+        margin-top: 60px; /* Adjusted margin */
+    }
+}
 
+@media (max-width: 992px) {
+    .main-content {
+        padding: 60px 10px; /* Adjusted padding for medium screens */
+        margin-left: 40px; /* Adjusted margin */
+        margin-top: 50px; /* Adjusted margin */
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 40px 10px; /* Adjusted padding for small screens */
+        margin-left: 20px; /* Adjusted margin */
+        margin-top: 40px; /* Adjusted margin */
+    }
+}
+
+@media (max-width: 576px) {
+    .main-content {
+        padding: 30px 5px; /* Adjusted padding for very small screens */
+        margin-left: 10px; /* Adjusted margin */
+        margin-top: 30px; /* Adjusted margin */
+    }
+}
       .main-content h1 {
         color: rgb(223, 223, 223);
         font-size: 96px;
@@ -224,6 +254,78 @@
         font-family: 'Patrick Hand', cursive;
         font-weight: 500;
       }
+      @media (max-width: 1200px) {
+    .overview-section {
+        margin-right: 60px; /* Adjusted margin */
+        padding: 70px 20px; /* Adjusted padding */
+        padding-bottom: 8%;
+        padding-top: 8%;
+    }
+
+    .overview-section h2 {
+        font-size: 42px; /* Adjusted font size */
+    }
+
+    .overview-section p {
+        font-size: 19px; /* Adjusted font size */
+        margin-right: 200px; /* Adjusted margin */
+    }
+}
+
+@media (max-width: 992px) {
+    .overview-section {
+        margin-right: 40px; /* Adjusted margin */
+        padding: 60px 15px; /* Adjusted padding */
+        padding-bottom: 7%;
+        padding-top: 7%;
+    }
+
+    .overview-section h2 {
+        font-size: 36px; /* Adjusted font size */
+    }
+
+    .overview-section p {
+        font-size: 17px; /* Adjusted font size */
+        margin-right: 150px; /* Adjusted margin */
+    }
+}
+
+@media (max-width: 768px) {
+    .overview-section {
+        margin-right: 20px; /* Adjusted margin */
+        padding: 50px 10px; /* Adjusted padding */
+        padding-bottom: 6%;
+        padding-top: 6%;
+    }
+
+    .overview-section h2 {
+        font-size: 30px; /* Adjusted font size */
+    }
+
+    .overview-section p {
+        font-size: 15px; /* Adjusted font size */
+        margin-right: 100px; /* Adjusted margin */
+    }
+}
+
+@media (max-width: 576px) {
+    .overview-section {
+        margin-right: 10px; /* Adjusted margin */
+        padding: 80px 40px; /* Adjusted padding */
+        padding-bottom: 5%;
+        padding-top: 5%;
+    }
+
+    .overview-section h2 {
+        font-size: 24px; /* Adjusted font size */
+        padding-right: 4000px;
+    }
+
+    .overview-section p {
+        font-size: 13px; /* Adjusted font size */
+        margin-right: 50px; /* Adjusted margin */
+    }
+}
       .event-details-section {
         background: linear-gradient(45deg, #080101, #1c0303);
     padding: 30px 30px; /* Padding for the notepad */
@@ -288,6 +390,65 @@
       .event-details-section ul li strong {
         color: #f39c12; /* Gold color for labels */
       }
+      @media (max-width: 1200px) {
+    .event-details-section {
+        margin: 30px 60px;
+        padding: 25px 25px;
+    }
+
+    .event-details-section h2 {
+        font-size: 44px;
+    }
+
+    .event-details-section ul {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 992px) {
+    .event-details-section {
+        margin: 20px 40px;
+        padding: 20px 20px;
+    }
+
+    .event-details-section h2 {
+        font-size: 36px;
+    }
+
+    .event-details-section ul {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .event-details-section {
+        margin: 20px 20px;
+        padding: 15px 15px;
+    }
+
+    .event-details-section h2 {
+        font-size: 30px;
+    }
+
+    .event-details-section ul {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .event-details-section {
+        margin: 15px 10px;
+        padding: 10px 10px;
+    }
+
+    .event-details-section h2 {
+        font-size: 24px;
+    }
+
+    .event-details-section ul {
+        font-size: 12px;
+    }
+}
       .schedule-section {
         background: linear-gradient(45deg, #080101, #1c0303); /* Dark gradient background */
     padding: 70px 50px; /* Padding for the section */
@@ -531,6 +692,7 @@
     .schedule-section {
         margin: 10px 10px; /* Adjusted margin */
         padding: 20px 10px; /* Adjusted padding */
+        margin-left: 20px;
     }
 
     .schedule-section h2 {
@@ -843,7 +1005,66 @@
 .speaker-item:nth-child(6) {
     animation-delay: 1.2s;
 }
+@media (max-width: 1200px) {
+    .speakers-section {
+        padding: 50px 60px;
+        margin: 30px 60px;
+    }
 
+    .speakers-section h2 {
+        font-size: 48px;
+    }
+
+    .speaker-item {
+        width: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    .speakers-section {
+        padding: 40px 40px;
+        margin: 20px 40px;
+    }
+
+    .speakers-section h2 {
+        font-size: 40px;
+    }
+
+    .speaker-item {
+        width: 85%;
+    }
+}
+
+@media (max-width: 768px) {
+    .speakers-section {
+        padding: 30px 30px;
+        margin: 20px 20px;
+    }
+
+    .speakers-section h2 {
+        font-size: 32px;
+    }
+
+    .speaker-item {
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    .speakers-section {
+        padding: 20px 20px;
+        margin: 15px 10px;
+    }
+
+    .speakers-section h2 {
+        font-size: 24px;
+    }
+
+    .speaker-item {
+        width: 75%;
+        margin-left: 40px;
+    }
+}
 .footer {
   background: #111;
   padding: 40px 0;
@@ -1187,5 +1408,3 @@
 </body>
 </html>
 
-</body>
-</html>
